@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SoleSize — Shoe Size Converter for US, UK, EU &amp; India Sizes</title>
+<meta name="description" content="SoleSize is a free shoe size converter for men, women and kids. Convert US, UK, EU and India sizes instantly, or enter your foot length in cm to find your perfect fit.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>body{font-family:Inter,system-ui,sans-serif}h1,h2,h3,.display{font-family:Archivo,sans-serif}.lane{background:repeating-linear-gradient(90deg,#fff 0 46px,#fff7ed 46px 47px)}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I convert a US shoe size to UK, EU and India sizes?", "acceptedAnswer": {"@type": "Answer", "text": "Pick Men, Women or Kids at the top of SoleSize, choose US as your starting system, type your size and tap Convert. You will instantly see the matching UK, EU and India sizes plus the foot length in centimetres. For example, a men's US 9 is a UK 8.5, an EU 42.5 and an India 8.5."}}, {"@type": "Question", "name": "Is the India shoe size the same as the UK size?", "acceptedAnswer": {"@type": "Answer", "text": "In most charts, yes. India sizes follow the UK system, so a UK 8 is usually an India 8 as well. Some Indian brands round slightly differently or run narrow, so always check the brand's own chart and your foot length in centimetres before ordering, especially for running shoes."}}, {"@type": "Question", "name": "How do I measure my foot length at home?", "acceptedAnswer": {"@type": "Answer", "text": "Place a sheet of paper on a hard floor against a wall, stand on it with your full weight, mark the back of your heel and the tip of your longest toe, then measure the distance between the marks in centimetres. Measure both feet in the evening and use the longer measurement in SoleSize."}}, {"@type": "Question", "name": "Why do men's and women's sizes differ for the same foot length?", "acceptedAnswer": {"@type": "Answer", "text": "Men's and women's charts are built on different lasts and starting points. A 25.4 cm foot is roughly a men's US 7 but a women's US 9. That is why SoleSize asks you to choose Men, Women or Kids first \u2014 converting without a category gives misleading results."}}, {"@type": "Question", "name": "What should I do if I am between two shoe sizes?", "acceptedAnswer": {"@type": "Answer", "text": "If your foot length falls between sizes, most people size up for running and training shoes to leave thumb-width room for toes, and stay closer to size for court shoes or dress shoes. Thick socks, orthotics and wide feet are all good reasons to choose the larger size."}}, {"@type": "Question", "name": "Do kids' shoe sizes work the same way as adult sizes?", "acceptedAnswer": {"@type": "Answer", "text": "Kids' sizes use their own scale that runs from small children's sizes into youth sizes, which is why the numbers restart. SoleSize has a dedicated Kids chart covering roughly 14 cm to 21.6 cm feet. Because children's feet grow quickly, re-measure every two to three months and leave about half a centimetre of growing room."}}]}</script>
+</head>
+<body id="top" class="bg-white text-slate-900">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b-4 border-orange-500">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+<a href="#top" class="flex items-center gap-2"><span class="text-3xl">👟</span><span class="display font-black text-2xl tracking-tight">Sole<span class="text-orange-600">Size</span></span></a>
+<nav class="flex gap-5 font-semibold text-sm"><a href="#top" class="hover:text-orange-600">Home</a><a href="https://fixoraa.tech" class="hover:text-orange-600">More Tools</a></nav>
+</div></header>
+<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pt-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:728px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <div class="origin-top scale-[0.44] sm:scale-100 shrink-0">
+        <script>
+          atOptions = { 'key' : '4e68ac77881c17fe128a46565d9a4e8c', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+        </script>
+        <script src="https://www.highrevenueformat.com/4e68ac77881c17fe128a46565d9a4e8c/invoke.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+<main class="max-w-6xl mx-auto px-4 sm:px-6">
+<section class="text-center py-8">
+<span class="inline-block bg-orange-600 text-white text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">Unlimited Free Usage</span>
+<h1 class="display text-4xl sm:text-6xl font-black mt-4 leading-none">SHOE SIZE <span class="text-orange-600">CONVERTER</span></h1>
+<p class="mt-3 text-slate-600 max-w-2xl mx-auto">One chart stage, every system. Convert US, UK, EU and India sizes for men, women and kids — or skip the guessing and start from your foot length in centimetres.</p>
+</section>
+
+<!-- SIZE CHART STAGE -->
+<section class="border-4 border-slate-900 rounded-[2rem] overflow-hidden shadow-[8px_8px_0_#ea580c]">
+<div class="bg-slate-900 text-white px-5 py-3 flex flex-wrap justify-between items-center gap-2"><span class="display font-black tracking-wide">🏁 THE SIZE CHART STAGE</span><span class="text-xs text-orange-300 font-bold">LIVE • NO SIGNUP • NO WATERMARK</span></div>
+<div class="lane p-5 sm:p-8">
+<div class="flex flex-wrap gap-2 justify-center" role="group" aria-label="Category">
+<button data-cat="men" class="catBtn bg-orange-600 text-white font-bold px-5 py-2.5 rounded-full">👨 Men</button>
+<button data-cat="women" class="catBtn bg-white border-2 border-slate-900 font-bold px-5 py-2.5 rounded-full">👩 Women</button>
+<button data-cat="kids" class="catBtn bg-white border-2 border-slate-900 font-bold px-5 py-2.5 rounded-full">🧒 Kids</button>
+</div>
+<div class="grid md:grid-cols-2 gap-5 mt-6">
+<div class="bg-white border-2 border-slate-200 rounded-2xl p-5">
+<label class="font-bold text-sm">I know my size in</label>
+<div class="flex gap-2 mt-2 flex-wrap" id="sysBtns">
+<button data-sys="us" class="sysBtn bg-slate-900 text-white px-4 py-2 rounded-xl font-bold">US</button>
+<button data-sys="uk" class="sysBtn bg-orange-100 px-4 py-2 rounded-xl font-bold">UK</button>
+<button data-sys="eu" class="sysBtn bg-orange-100 px-4 py-2 rounded-xl font-bold">EU</button>
+<button data-sys="india" class="sysBtn bg-orange-100 px-4 py-2 rounded-xl font-bold">India</button>
+</div>
+<label class="font-bold text-sm block mt-4" for="sizeInput">Your size</label>
+<input id="sizeInput" type="number" step="0.5" placeholder="e.g. 9" class="w-full mt-1 border-2 border-slate-300 rounded-xl px-4 py-3 text-xl font-bold focus:outline-none focus:border-orange-500">
+<button id="convertBtn" class="w-full mt-4 bg-orange-600 hover:bg-orange-700 text-white font-black py-3.5 rounded-xl text-lg">CONVERT MY SIZE →</button>
+<p id="msg" class="mt-3 text-sm font-semibold text-red-600 min-h-[1.25rem]"></p>
+</div>
+<div class="bg-orange-600 text-white rounded-2xl p-5">
+<label class="font-bold text-sm" for="cmInput">…or measure your foot (best method)</label>
+<div class="flex gap-2 mt-2"><input id="cmInput" type="number" step="0.1" placeholder="Foot length, e.g. 27.1" class="flex-1 min-w-0 rounded-xl px-4 py-3 text-xl font-bold text-slate-900 focus:outline-none"><span class="self-center font-black">cm</span></div>
+<p class="text-orange-100 text-sm mt-1">That is <span id="inchOut">—</span> inches. Stand on paper, mark heel to longest toe.</p>
+<button id="cmBtn" class="w-full mt-3 bg-slate-900 hover:bg-black text-white font-black py-3.5 rounded-xl text-lg">FIND SIZE FROM FOOT →</button>
+<div class="mt-4 bg-white/15 rounded-xl p-3 text-sm"><strong>Pro tip:</strong> Measure in the evening — feet swell during the day. Always use the longer of your two feet.</div>
+</div>
+</div>
+<div id="result" class="mt-6 bg-white border-2 border-slate-900 rounded-2xl p-5 hidden">
+<h2 class="display font-black text-xl">Your sizes</h2>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mt-3 text-center">
+<div class="bg-orange-50 rounded-xl p-3"><div class="text-xs font-bold text-slate-500">US</div><div id="rUS" class="display text-3xl font-black text-orange-600">—</div></div>
+<div class="bg-orange-50 rounded-xl p-3"><div class="text-xs font-bold text-slate-500">UK</div><div id="rUK" class="display text-3xl font-black">—</div></div>
+<div class="bg-orange-50 rounded-xl p-3"><div class="text-xs font-bold text-slate-500">EU</div><div id="rEU" class="display text-3xl font-black">—</div></div>
+<div class="bg-orange-50 rounded-xl p-3"><div class="text-xs font-bold text-slate-500">INDIA</div><div id="rIN" class="display text-3xl font-black">—</div></div>
+<div class="bg-slate-900 text-white rounded-xl p-3"><div class="text-xs font-bold text-slate-300">FOOT</div><div id="rCM" class="display text-3xl font-black">—</div></div>
+</div>
+<p id="rNote" class="mt-3 text-sm text-slate-600"></p>
+<button id="copyBtn" class="mt-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-bold">📋 Copy result</button> <span id="copied" class="text-green-700 font-bold text-sm"></span>
+</div>
+</div>
+<div class="bg-white p-5 sm:p-8 border-t-2 border-dashed">
+<h2 class="display font-black text-2xl">Full chart — <span id="chartTitle">Men</span></h2>
+<div class="overflow-x-auto mt-3"><table class="w-full text-sm min-w-[520px]"><thead><tr class="bg-slate-900 text-white text-left"><th class="p-3">Foot (cm)</th><th class="p-3">US</th><th class="p-3">UK</th><th class="p-3">EU</th><th class="p-3">India</th></tr></thead><tbody id="chartBody"></tbody></table></div>
+</div>
+</section>
+
+<section class="grid sm:grid-cols-3 gap-4 mt-8">
+<div class="bg-orange-50 border border-orange-200 rounded-2xl p-5"><div class="text-3xl">📏</div><h3 class="font-black mt-1">Measure, don't guess</h3><p class="text-sm text-slate-600 mt-1">Foot length in centimetres is the one measurement every brand shares. Start there and conversions stop being a gamble.</p></div>
+<div class="bg-orange-50 border border-orange-200 rounded-2xl p-5"><div class="text-3xl">🇮🇳</div><h3 class="font-black mt-1">India sizes included</h3><p class="text-sm text-slate-600 mt-1">Most converters skip India. SoleSize shows it on every row, because Indian shoppers order from US, UK and EU stores daily.</p></div>
+<div class="bg-orange-50 border border-orange-200 rounded-2xl p-5"><div class="text-3xl">👶</div><h3 class="font-black mt-1">Kids covered too</h3><p class="text-sm text-slate-600 mt-1">A dedicated children's chart from about 14 cm upward, with growing-room guidance built into the guide below.</p></div>
+</section>
+
+<section class="mt-8 bg-slate-900 text-white rounded-[2rem] p-6 sm:p-8">
+<h2 class="display font-black text-2xl">How to measure your foot — the 2-minute guide</h2>
+<ol class="mt-4 space-y-3 text-slate-200 list-decimal list-inside">
+<li><strong class="text-white">Paper &amp; wall:</strong> Tape a sheet of paper to a hard floor, flush against a wall. Tiles or wood — never carpet.</li>
+<li><strong class="text-white">Stand tall:</strong> Put your heel lightly against the wall and stand with full weight on the paper, wearing the socks you plan to wear with the shoes.</li>
+<li><strong class="text-white">Mark both ends:</strong> Mark the wall point behind your heel and the tip of your longest toe — which is not always the big toe.</li>
+<li><strong class="text-white">Measure in cm:</strong> Measure between the marks to the nearest millimetre. Repeat with the other foot and keep the longer number.</li>
+<li><strong class="text-white">Convert above:</strong> Type that number into the orange foot-length box and SoleSize picks the smallest size that comfortably fits.</li>
+</ol>
+</section>
+</main>
+<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pb-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:728px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="464498"></script>
+    </div>
+  </div>
+</div>
+<main class="max-w-4xl mx-auto px-4 sm:px-6 pb-12">
+<article id="article" class="prose-like leading-relaxed text-slate-700 space-y-4 mt-4">
+<h2 class="display text-3xl font-black text-slate-900">Shoe Size Conversion, Explained Properly: US, UK, EU and India Sizes for Men, Women and Kids</h2>
+<p>Buying shoes used to mean walking into a shop, sitting down, and trying on three pairs while an assistant hovered with a metal measuring gauge. Today most shoes are bought on a screen, often from a store on another continent, and the single most common reason for a return is the oldest problem in footwear: the size was wrong. A men's US 9, a UK 8.5, an EU 42.5 and an India 8.5 can all describe exactly the same foot — yet they look like four completely different numbers. SoleSize exists to translate between those systems instantly and honestly, for men, women and kids, and to anchor everything to the one measurement that never changes its meaning: the length of your foot in centimetres.</p>
+<p>Why are there so many systems at all? Because each one grew up independently. The UK system, the oldest of the modern scales, is built on barleycorns — an old English unit equal to one third of an inch. Each full shoe size adds one barleycorn of length. The US system started from a similar idea but shifted the starting point, which is why US and UK sizes for the same foot usually differ by half a size to a full size, and why the offset is not identical for men and women. The European system uses the Paris point, equal to two thirds of a centimetre, counted from a different zero. India's sizing follows the UK tradition, which is convenient for Indian shoppers buying from British brands, but confusing when the same shopper switches to an American store where the number on the box suddenly jumps. None of these systems is wrong. They are simply different rulers laid over the same foot, and a converter is a translation table between rulers.</p>
+<h3 class="display text-xl font-black text-slate-900">Why foot length in centimetres beats every label</h3>
+<p>Labels lie in small, expensive ways. Brands cut their shoes on different lasts — the mould a shoe is built around — so one company's US 9 can feel roomier than another's US 9.5. Sizing also drifts between a brand's running line and its lifestyle line. Your foot length in centimetres, however, is a physical fact. Measure it once, carefully, and you can shop any chart in the world with confidence. That is why SoleSize puts the centimetre input in the hero position, in the orange panel, rather than hiding it in a footnote. When you enter a foot length, the tool selects the smallest chart size whose length accommodates your foot, because a shoe must be at least as long as the foot inside it, with a little breathing room for your toes to spread as you walk. Entering inches by mistake is the most common measuring error, so the tool also shows your centimetre value converted to inches as a sanity check — a typical adult foot is between about 22 and 31 centimetres, or roughly 8.7 to 12.2 inches.</p>
+<p>Measuring well matters more than measuring often. Feet are at their largest in the evening, after a day of standing and walking, so an evening measurement is the honest one for shoes you will wear all day. Always measure both feet: most people have one foot slightly longer than the other, sometimes by half a size, and the larger foot should always win. Stand, do not sit, because body weight spreads the foot and adds a few millimetres. Wear the socks you intend to wear with the shoes — thick trekking socks can add the equivalent of half a size. And measure again every year or two; adult feet change slowly with age, weight and activity, and children's feet change startlingly fast, which is why the kids' chart in SoleSize starts at about 14 centimetres and why the guide below recommends re-measuring children every two to three months.</p>
+<h3 class="display text-xl font-black text-slate-900">Men's, women's and kids' charts are genuinely different</h3>
+<p>A frequent mistake is converting a women's size using a men's chart, or the other way around, and assuming the result is close enough. It is not. The two adult charts start from different base points, so the same 25.4-centimetre foot is roughly a men's US 7 but a women's US 9 — a two-size gap that guarantees a bad fit if the wrong chart is used. Women's shoes are also typically built narrower, so even a numerically correct conversion can feel tight across the forefoot for someone with wide feet. Kids' sizes are a world of their own: the scale runs through children's sizes, then restarts at low numbers for youth sizes, which is why a kids' US 1 can be larger than a kids' US 13. SoleSize handles this by making the category the very first choice — Men, Women or Kids — and swapping the entire chart underneath, so the table you see is always the table being used. The highlighted row in the chart marks your most recent result, making it easy to compare neighbouring sizes if you are deciding whether to size up.</p>
+<h3 class="display text-xl font-black text-slate-900">India sizes: the column most converters forget</h3>
+<p>India is one of the largest footwear markets on earth, yet many international converters still omit the India column, leaving Indian shoppers to guess that India follows the UK. Broadly, it does: an India 8 and a UK 8 describe the same length. But the guesswork ends there in practice, because Indian brands vary — some run narrow, some round their half sizes differently, and unbranded or regional footwear can deviate further. Showing the India size beside US, UK and EU on every single row, as SoleSize does, removes one whole layer of mental arithmetic for the shoppers who need conversions most often: people in India ordering sneakers from American stores, formal shoes from British brands, and European sports shoes, sometimes in the same week. If you shop across borders regularly, the habit worth building is simple — know your centimetre length, and treat every label, including the India label, as a starting point rather than a promise.</p>
+<h3 class="display text-xl font-black text-slate-900">Sneakers, running shoes and formal shoes do not fit alike</h3>
+<p>Sneaker culture made size conversion a daily problem. Limited releases sell out in minutes, often on overseas sites, with no chance to try anything on. For sneakers and running shoes, most runners prefer a thumb's width — roughly a centimetre — between their longest toe and the end of the shoe, because feet swell during a run and toes splay under load. That usually means choosing the size SoleSize suggests, or the next half size up if you are exactly on a boundary. Court shoes, football boots and climbing shoes are fitted closer, because lateral control matters more than toe room. Formal leather shoes sit in between: snug when new, because leather gives a little with wear, but never painful. High heels shift weight forward, so many people prefer a half size of extra room. None of this changes the conversion itself — a centimetre is a centimetre — but it changes which row neighbouring your result you should choose, and the full chart on this page is there precisely so you can make that judgement with the numbers in front of you.</p>
+<h3 class="display text-xl font-black text-slate-900">Half sizes, wide feet and other edge cases</h3>
+<p>Half sizes exist because feet do not grow in whole-size steps, yet not every brand makes them, especially in kids' ranges and budget lines. If your result is a half size and the shoe you want only comes in whole sizes, size up rather than down — a slightly roomy shoe can be adjusted with lacing, insoles or thicker socks, while a short shoe cannot be stretched longer and will punish your toes. Width is the invisible dimension no length chart captures: if you regularly find shoes tight across the ball of the foot, look for wide fittings, often marked E, EE or simply Wide, and consider the larger neighbouring size. Orthotic insoles add volume needs too. For children, leave roughly half a centimetre of growing room beyond the measured length, check the fit by pressing the toe box while they stand, and never buy two sizes up to grow into — oversized shoes trip small runners and wear unevenly.</p>
+<p>Returns are the hidden cost of bad conversion. Footwear has one of the highest return rates in online retail, and size is the leading cause; every avoided return saves delivery emissions, packaging and your own time at the courier office. A thirty-second measurement and an honest chart prevent most of it. Keep your measurement somewhere you will find it — a note on your phone with your centimetre length and your sizes in all four systems is a genuinely useful thing to own. SoleSize's copy button exists for exactly that: convert once, copy the row, and paste it into your notes. Next time a drop goes live in another country's store, you will already know your number in their system, and you can spend the launch minutes checking out instead of doing arithmetic.</p>
+<p>Finally, a note on honesty in sizing charts. Different publishers' charts occasionally differ by half a size on the same conversion, because brands themselves differ. SoleSize uses widely accepted standard chart values and shows the underlying centimetre length on every result, so you can see exactly which length each label was matched to and judge for yourself. When a brand publishes its own chart, prefer the brand's chart for that purchase — and prefer your centimetre measurement over any label memory. Shoes are worn for thousands of steps a day; getting the translation right is a small act of kindness to your future self, and it starts with a sheet of paper, a wall, and two pencil marks.</p>
+</article>
+<section class="mt-8 space-y-3"><h2 class="display text-2xl font-black text-slate-900">Frequently asked questions</h2>
+<details class="bg-white border border-orange-100 rounded-2xl p-5"><summary class="font-bold cursor-pointer">How do I convert a US shoe size to UK, EU and India sizes?</summary><p class="mt-2 text-slate-600 leading-relaxed">Pick Men, Women or Kids at the top of SoleSize, choose US as your starting system, type your size and tap Convert. You will instantly see the matching UK, EU and India sizes plus the foot length in centimetres. For example, a men's US 9 is a UK 8.5, an EU 42.5 and an India 8.5.</p></details>
+<details class="bg-white border border-orange-100 rounded-2xl p-5"><summary class="font-bold cursor-pointer">Is the India shoe size the same as the UK size?</summary><p class="mt-2 text-slate-600 leading-relaxed">In most charts, yes. India sizes follow the UK system, so a UK 8 is usually an India 8 as well. Some Indian brands round slightly differently or run narrow, so always check the brand's own chart and your foot length in centimetres before ordering, especially for running shoes.</p></details>
+<details class="bg-white border border-orange-100 rounded-2xl p-5"><summary class="font-bold cursor-pointer">How do I measure my foot length at home?</summary><p class="mt-2 text-slate-600 leading-relaxed">Place a sheet of paper on a hard floor against a wall, stand on it with your full weight, mark the back of your heel and the tip of your longest toe, then measure the distance between the marks in centimetres. Measure both feet in the evening and use the longer measurement in SoleSize.</p></details>
+<details class="bg-white border border-orange-100 rounded-2xl p-5"><summary class="font-bold cursor-pointer">Why do men's and women's sizes differ for the same foot length?</summary><p class="mt-2 text-slate-600 leading-relaxed">Men's and women's charts are built on different lasts and starting points. A 25.4 cm foot is roughly a men's US 7 but a women's US 9. That is why SoleSize asks you to choose Men, Women or Kids first — converting without a category gives misleading results.</p></details>
+<details class="bg-white border border-orange-100 rounded-2xl p-5"><summary class="font-bold cursor-pointer">What should I do if I am between two shoe sizes?</summary><p class="mt-2 text-slate-600 leading-relaxed">If your foot length falls between sizes, most people size up for running and training shoes to leave thumb-width room for toes, and stay closer to size for court shoes or dress shoes. Thick socks, orthotics and wide feet are all good reasons to choose the larger size.</p></details>
+<details class="bg-white border border-orange-100 rounded-2xl p-5"><summary class="font-bold cursor-pointer">Do kids' shoe sizes work the same way as adult sizes?</summary><p class="mt-2 text-slate-600 leading-relaxed">Kids' sizes use their own scale that runs from small children's sizes into youth sizes, which is why the numbers restart. SoleSize has a dedicated Kids chart covering roughly 14 cm to 21.6 cm feet. Because children's feet grow quickly, re-measure every two to three months and leave about half a centimetre of growing room.</p></details>
+</section>
+<p class="text-center text-xs text-slate-400 mt-8">SoleSize — free shoe size conversion for men, women and kids. Sizes follow standard charts; always check the brand chart for a final purchase.</p>
+</main>
+<script id="lib-solesize">
+var SoleSizeLib = {
+  charts: {
+    men: [
+      { cm: 24.5, us: 6, uk: 5.5, eu: 38.5, india: 5.5 },
+      { cm: 24.9, us: 6.5, uk: 6, eu: 39, india: 6 },
+      { cm: 25.4, us: 7, uk: 6.5, eu: 40, india: 6.5 },
+      { cm: 25.7, us: 7.5, uk: 7, eu: 40.5, india: 7 },
+      { cm: 26.0, us: 8, uk: 7.5, eu: 41, india: 7.5 },
+      { cm: 26.7, us: 8.5, uk: 8, eu: 42, india: 8 },
+      { cm: 27.1, us: 9, uk: 8.5, eu: 42.5, india: 8.5 },
+      { cm: 27.4, us: 9.5, uk: 9, eu: 43, india: 9 },
+      { cm: 27.9, us: 10, uk: 9.5, eu: 44, india: 9.5 },
+      { cm: 28.3, us: 10.5, uk: 10, eu: 44.5, india: 10 },
+      { cm: 28.7, us: 11, uk: 10.5, eu: 45, india: 10.5 },
+      { cm: 29.4, us: 12, uk: 11.5, eu: 46, india: 11.5 },
+      { cm: 30.1, us: 13, uk: 12.5, eu: 47.5, india: 12.5 },
+      { cm: 30.8, us: 14, uk: 13.5, eu: 48.5, india: 13.5 }
+    ],
+    women: [
+      { cm: 22.0, us: 5, uk: 3, eu: 35.5, india: 3 },
+      { cm: 22.4, us: 5.5, uk: 3.5, eu: 36, india: 3.5 },
+      { cm: 22.9, us: 6, uk: 4, eu: 36.5, india: 4 },
+      { cm: 23.3, us: 6.5, uk: 4.5, eu: 37.5, india: 4.5 },
+      { cm: 23.7, us: 7, uk: 5, eu: 38, india: 5 },
+      { cm: 24.1, us: 7.5, uk: 5.5, eu: 38.5, india: 5.5 },
+      { cm: 24.5, us: 8, uk: 6, eu: 39, india: 6 },
+      { cm: 25.0, us: 8.5, uk: 6.5, eu: 40, india: 6.5 },
+      { cm: 25.4, us: 9, uk: 7, eu: 40.5, india: 7 },
+      { cm: 25.9, us: 9.5, uk: 7.5, eu: 41, india: 7.5 },
+      { cm: 26.2, us: 10, uk: 8, eu: 42, india: 8 },
+      { cm: 26.7, us: 10.5, uk: 8.5, eu: 42.5, india: 8.5 },
+      { cm: 27.1, us: 11, uk: 9, eu: 43, india: 9 }
+    ],
+    kids: [
+      { cm: 14.0, us: 8, uk: 7.5, eu: 25, india: 7.5 },
+      { cm: 14.6, us: 9, uk: 8.5, eu: 26, india: 8.5 },
+      { cm: 15.2, us: 10, uk: 9.5, eu: 27, india: 9.5 },
+      { cm: 15.9, us: 11, uk: 10.5, eu: 28, india: 10.5 },
+      { cm: 16.5, us: 12, uk: 11.5, eu: 29.5, india: 11.5 },
+      { cm: 17.1, us: 13, uk: 12.5, eu: 31, india: 12.5 },
+      { cm: 17.8, us: 1, uk: 13.5, eu: 32, india: 13.5 },
+      { cm: 18.4, us: 2, uk: 1, eu: 33, india: 1 },
+      { cm: 19.1, us: 3, uk: 2, eu: 34, india: 2 },
+      { cm: 19.7, us: 4, uk: 3, eu: 36, india: 3 },
+      { cm: 20.3, us: 5, uk: 4, eu: 37, india: 4 },
+      { cm: 21.0, us: 5.5, uk: 4.5, eu: 37.5, india: 4.5 },
+      { cm: 21.6, us: 6, uk: 5, eu: 38, india: 5 }
+    ]
+  },
+  normalizeCategory: function (c) {
+    if (!c) return null;
+    var v = String(c).toLowerCase().trim();
+    if (v === 'men' || v === 'man' || v === 'male') return 'men';
+    if (v === 'women' || v === 'woman' || v === 'female') return 'women';
+    if (v === 'kids' || v === 'kid' || v === 'children' || v === 'child') return 'kids';
+    return null;
+  },
+  normalizeSystem: function (s) {
+    if (!s) return null;
+    var v = String(s).toLowerCase().trim();
+    if (v === 'us' || v === 'usa') return 'us';
+    if (v === 'uk') return 'uk';
+    if (v === 'eu' || v === 'eur' || v === 'europe') return 'eu';
+    if (v === 'india' || v === 'in' || v === 'ind') return 'india';
+    if (v === 'cm') return 'cm';
+    return null;
+  },
+  convert: function (category, system, value) {
+    var cat = this.normalizeCategory(category);
+    var sys = this.normalizeSystem(system);
+    if (!cat) return { error: 'Please choose Men, Women or Kids.' };
+    if (!sys) return { error: 'Please choose a size system (US, UK, EU, India or cm).' };
+    var num = parseFloat(value);
+    if (value === '' || value === null || value === undefined || isNaN(num)) return { error: 'Please enter a valid shoe size or foot length.' };
+    var chart = this.charts[cat];
+    if (sys === 'cm') {
+      if (num < 10 || num > 35) return { error: 'Foot length looks out of range. Enter a value between 10 and 35 cm.' };
+      return this.fromFootLength(cat, num);
+    }
+    // find closest row by system value
+    var best = null, bestDiff = Infinity;
+    for (var i = 0; i < chart.length; i++) {
+      var d = Math.abs(chart[i][sys] - num);
+      if (d < bestDiff) { bestDiff = d; best = chart[i]; }
+    }
+    if (!best || bestDiff > 0.51) return { error: 'That size is outside the chart for ' + cat + '. Try a nearby size.' };
+    return { category: cat, cm: best.cm, us: best.us, uk: best.uk, eu: best.eu, india: best.india, exact: bestDiff < 0.001 };
+  },
+  fromFootLength: function (category, cm) {
+    var cat = this.normalizeCategory(category);
+    if (!cat) return { error: 'Please choose Men, Women or Kids.' };
+    var num = parseFloat(cm);
+    if (isNaN(num)) return { error: 'Please enter your foot length in centimetres.' };
+    if (num < 10 || num > 35) return { error: 'Foot length looks out of range. Enter a value between 10 and 35 cm.' };
+    var chart = this.charts[cat];
+    // Recommend smallest size whose cm >= measured length (room to fit); if below first, first; if above last, last+flag
+    for (var i = 0; i < chart.length; i++) {
+      if (num <= chart[i].cm) {
+        return { category: cat, cm: chart[i].cm, footCm: num, us: chart[i].us, uk: chart[i].uk, eu: chart[i].eu, india: chart[i].india, exact: Math.abs(num - chart[i].cm) < 0.05 };
+      }
+    }
+    var last = chart[chart.length - 1];
+    return { category: cat, cm: last.cm, footCm: num, us: last.us, uk: last.uk, eu: last.eu, india: last.india, exact: false, overRange: true, note: 'Your foot is longer than the largest chart size shown — consider the largest size or a brand that runs larger.' };
+  },
+  cmToInches: function (cm) {
+    var n = parseFloat(cm);
+    if (isNaN(n)) return null;
+    return Math.round((n / 2.54) * 100) / 100;
+  },
+  inchesToCm: function (inch) {
+    var n = parseFloat(inch);
+    if (isNaN(n)) return null;
+    return Math.round(n * 2.54 * 100) / 100;
+  },
+  formatSize: function (v) {
+    if (v === null || v === undefined) return '—';
+    return (v % 1 === 0) ? String(v) : String(v);
+  }
+};
+if (typeof module !== 'undefined' && module.exports) { module.exports = SoleSizeLib; }
+
+</script>
+<script>
+let cat='men', sys='us';
+function renderChart(){document.getElementById('chartTitle').textContent=cat==='men'?'Men':cat==='women'?'Women':'Kids';const tb=document.getElementById('chartBody');tb.innerHTML=SoleSizeLib.charts[cat].map(r=>`<tr class="border-b hover:bg-orange-50"><td class="p-3 font-bold">${r.cm.toFixed(1)}</td><td class="p-3">${r.us}</td><td class="p-3">${r.uk}</td><td class="p-3">${r.eu}</td><td class="p-3">${r.india}</td></tr>`).join('');}
+function show(res){const m=document.getElementById('msg');if(res.error){m.textContent=res.error;document.getElementById('result').classList.add('hidden');return;}m.textContent='';const box=document.getElementById('result');box.classList.remove('hidden');document.getElementById('rUS').textContent=SoleSizeLib.formatSize(res.us);document.getElementById('rUK').textContent=SoleSizeLib.formatSize(res.uk);document.getElementById('rEU').textContent=SoleSizeLib.formatSize(res.eu);document.getElementById('rIN').textContent=SoleSizeLib.formatSize(res.india);document.getElementById('rCM').textContent=res.cm.toFixed(1);document.getElementById('rNote').textContent=(res.overRange?res.note+' ':'')+'Category: '+cat+' • Foot length matched: '+res.cm.toFixed(1)+' cm ('+SoleSizeLib.cmToInches(res.cm)+' in). Half a size of toe room is normal for running shoes.';box.scrollIntoView({behavior:'smooth',block:'nearest'});}
+document.querySelectorAll('.catBtn').forEach(b=>b.addEventListener('click',()=>{cat=b.dataset.cat;document.querySelectorAll('.catBtn').forEach(x=>{x.classList.remove('bg-orange-600','text-white');x.classList.add('bg-white');});b.classList.add('bg-orange-600','text-white');b.classList.remove('bg-white');renderChart();}));
+document.querySelectorAll('.sysBtn').forEach(b=>b.addEventListener('click',()=>{sys=b.dataset.sys;document.querySelectorAll('.sysBtn').forEach(x=>{x.classList.remove('bg-slate-900','text-white');x.classList.add('bg-orange-100');});b.classList.add('bg-slate-900','text-white');b.classList.remove('bg-orange-100');}));
+document.getElementById('convertBtn').addEventListener('click',()=>show(SoleSizeLib.convert(cat,sys,document.getElementById('sizeInput').value)));
+document.getElementById('cmBtn').addEventListener('click',()=>show(SoleSizeLib.fromFootLength(cat,document.getElementById('cmInput').value)));
+document.getElementById('cmInput').addEventListener('input',e=>{const v=parseFloat(e.target.value);document.getElementById('inchOut').textContent=isNaN(v)?'—':SoleSizeLib.cmToInches(v);});
+document.getElementById('copyBtn').addEventListener('click',()=>{const t='SoleSize ('+cat+'): US '+document.getElementById('rUS').textContent+' | UK '+document.getElementById('rUK').textContent+' | EU '+document.getElementById('rEU').textContent+' | India '+document.getElementById('rIN').textContent+' | Foot '+document.getElementById('rCM').textContent+' cm';if(navigator.clipboard)navigator.clipboard.writeText(t);document.getElementById('copied').textContent='Copied!';});
+renderChart();
+</script>
+<footer class="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-center text-sm text-slate-500">👟 SoleSize — US, UK, EU &amp; India shoe sizes, converted entirely in your browser. Always check the brand's own chart before buying.<p class="fx-credit" style="text-align:center;font-size:12.5px;opacity:.62;margin:10px auto 2px;letter-spacing:.01em">Made by <a href="https://fixoraa.tech" target="_blank" rel="noopener" style="color:inherit;font-weight:700;text-decoration:underline;text-underline-offset:2px">Fixoraa</a></p>
+</footer>
+</body></html>
